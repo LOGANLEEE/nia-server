@@ -38,6 +38,7 @@ model DogDrip {
   textContent  String
   likes        Int      @default(0)
   disLike      Int      @default(0) @map("dislikes")
+  htmlContent  String?
   registeredAt DateTime @default(now())
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt

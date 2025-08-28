@@ -8,7 +8,7 @@ export class DogDripController {
 
   @Get()
   async scrape(@Query('url') url: string) {
-    const title = await this.puppeteerService.scrapePage(url, 1);
+    const title = await this.puppeteerService.scrapePage(1);
     return { url, title };
   }
 }
